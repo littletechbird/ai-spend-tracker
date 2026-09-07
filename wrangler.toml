@@ -1,0 +1,7 @@
+# Cloudflare Pages stub — no secrets in this file.
+# Deploy: npx wrangler pages deploy static --project-name=ai-spend-tracker
+# Or connect the Git repo in the Cloudflare dashboard (build output dir = static).
+
+name = "ai-spend-tracker"
+compatibility_date = "2024-11-01"
+pages_build_output_dir = "static"

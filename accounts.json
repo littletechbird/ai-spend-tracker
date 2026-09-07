@@ -1,0 +1,54 @@
+{
+  "accounts": [
+    {
+      "id": "vendor-console",
+      "account": "Primary AI console (team prepaid)",
+      "sub_level": "team / prepaid",
+      "limit": null,
+      "limit_period": "month",
+      "source": "mgmt_api",
+      "notes": "Read-only management/billing API \u2014 never top-up from the tracker",
+      "visible": true
+    },
+    {
+      "id": "desktop-usage",
+      "account": "Desktop agent usage",
+      "sub_level": "weekly + on-demand",
+      "limit": null,
+      "limit_period": "week",
+      "source": "local_dashboard_rpc",
+      "notes": "Local session collector on your machine (read-only)",
+      "visible": true
+    },
+    {
+      "id": "image-credits",
+      "account": "Image / motion credits",
+      "sub_level": "starter",
+      "limit": null,
+      "limit_period": null,
+      "source": "balance_api",
+      "notes": "Free balance read only",
+      "visible": true
+    },
+    {
+      "id": "music-sub",
+      "account": "Music generation",
+      "sub_level": "Pro",
+      "limit": "$10/mo",
+      "limit_period": "month",
+      "source": "email_receipt",
+      "notes": "Example email-derived sub \u2014 replace with yours",
+      "visible": true
+    },
+    {
+      "id": "free-api-credits",
+      "account": "Free API credits (optional)",
+      "sub_level": "free grant",
+      "limit": null,
+      "limit_period": null,
+      "source": "connector",
+      "notes": "Hidden by default \u2014 no spend limit",
+      "visible": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+﻿{
+    "ui_poll_s":  60,
+    "accounts":  {
+                     "higgsfield":  {
+                                        "mode":  "periodic",
+                                        "every_min":  15,
+                                        "reason":  "free balance tool; light"
+                                    },
+                     "x-api-credits":  {
+                                           "mode":  "periodic",
+                                           "every_min":  15,
+                                           "reason":  "free get_usage_credits; light"
+                                       },
+                     "xai-console":  {
+                                         "mode":  "periodic",
+                                         "every_min":  60,
+                                         "reason":  "management API preferred; console scrape slower; never billable gen"
+                                     },
+                     "gmail_rows":  {
+                                        "mode":  "periodic",
+                                        "every_min":  360,
+                                        "reason":  "invoice mail rarely changes"
+                                    },
+                     "grok-cursor":  {
+                                         "mode":  "periodic",
+                                         "every_min":  30,
+                                         "reason":  "DashboardService GetSandUsageStatus+GetCurrentPeriodUsage via local sand-secrets decrypt; free; never inference"
+                                     }
+                 },
+    "rules":  [
+                  "Never call Imagine/generate/paid endpoints for refresh",
+                  "No Hatch desktop preview for the user",
+                  "If a refresh path causes issues, slow it further"
+              ],
+    "visibility":  {
+                       "show_only_active_spend_or_paid_subs":  true,
+                       "hide":  [
+                                    "free no-limit grants",
+                                    "vendors with no subscription found",
+                                    "canceled inactive plans"
+                                ],
+                       "keep_ids":  [
+                                        "grok-cursor",
+                                        "higgsfield",
+                                        "suno",
+                                        "xai-console"
+                                    ]
+                   }
+}

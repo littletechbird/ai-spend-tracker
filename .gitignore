@@ -1,0 +1,19 @@
+# Never ship live secrets or personal meters
+.env
+*.pem
+sand-secrets.json
+Local State
+cache/*_live.json
+cache/*_snapshot.json
+!cache/spend.example.json
+!cache/spend.json
+serve.log
+__pycache__/
+*.pyc
+
+# Live meter drops (Hatch / private host) — keep example only
+static/spend-live.json
+static/spend.json
+!static/live-spend.example.json
+!static/demo-spend.json
+node_modules/

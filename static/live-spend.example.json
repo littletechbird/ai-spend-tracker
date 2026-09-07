@@ -1,0 +1,64 @@
+{
+  "updated_at_pt": "Live example \u00b7 replace via Hatch routine",
+  "rows": [
+    {
+      "id": "vendor-console",
+      "account": "Primary AI console (team prepaid)",
+      "sub_level": "team / prepaid",
+      "limit": "$500 prepaid remaining (example)",
+      "limit_period": "month",
+      "current": "example: $120 used / 30d",
+      "next_reset": "example cycle end",
+      "status": "OK",
+      "source": "live-example",
+      "note": "Replace with your free connector later",
+      "visible": true
+    },
+    {
+      "id": "desktop-usage",
+      "account": "Desktop agent usage",
+      "sub_level": "weekly + on-demand",
+      "limit": "weekly quota + $1000 on-demand (example)",
+      "limit_period": "week",
+      "current": "weekly ~12% | on-demand $42 / $1000",
+      "next_reset": "example weekly reset",
+      "status": "OK",
+      "source": "live-example",
+      "note": "Sample numbers only \u2014 not live",
+      "visible": true
+    },
+    {
+      "id": "image-credits",
+      "account": "Image / motion credits",
+      "sub_level": "starter",
+      "limit": null,
+      "limit_period": null,
+      "current": "100 credits (example)",
+      "next_reset": null,
+      "status": "OK",
+      "source": "live-example",
+      "note": "",
+      "visible": true
+    },
+    {
+      "id": "music-sub",
+      "account": "Music generation",
+      "sub_level": "Pro",
+      "limit": "$10/mo",
+      "limit_period": "month",
+      "current": "subscription active (example)",
+      "next_reset": "example monthly reset",
+      "status": "EMAIL",
+      "source": "live-example",
+      "note": "Connect later via free / read-only billing APIs",
+      "visible": true
+    }
+  ],
+  "meta": {
+    "updated_at": "live-example",
+    "updated_at_pt": "Live example \u00b7 replace via Hatch routine",
+    "owner": null,
+    "mode": "live-static",
+    "note": "EXAMPLE of spend-live.json shape. Hatch overwrites spend-live.json on the host. Never commit real meters to the public pack."
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "rows": [
+    {
+      "id": "vendor-console",
+      "account": "Primary AI console (team prepaid)",
+      "sub_level": "team / prepaid",
+      "limit": "$500 prepaid remaining (example)",
+      "limit_period": "month",
+      "current": "example: $120 used / 30d",
+      "reset": "example cycle end",
+      "status": "OK",
+      "source": "example",
+      "note": "Replace with your live collector",
+      "visible": true
+    },
+    {
+      "id": "desktop-usage",
+      "account": "Desktop agent usage",
+      "sub_level": "weekly + on-demand",
+      "limit": "weekly quota + $1000 on-demand (example)",
+      "limit_period": "week",
+      "current": "weekly ~12% | on-demand $42 / $1000",
+      "reset": "example weekly reset",
+      "status": "OK",
+      "source": "example",
+      "note": "Sample numbers only \u2014 not live",
+      "visible": true
+    },
+    {
+      "id": "image-credits",
+      "account": "Image / motion credits",
+      "sub_level": "starter",
+      "limit": null,
+      "limit_period": null,
+      "current": "100 credits (example)",
+      "reset": null,
+      "status": "OK",
+      "source": "example",
+      "note": "",
+      "visible": true
+    },
+    {
+      "id": "music-sub",
+      "account": "Music generation",
+      "sub_level": "Pro",
+      "limit": "$10/mo",
+      "limit_period": "month",
+      "current": "subscription active (example)",
+      "reset": "example monthly reset",
+      "status": "EMAIL",
+      "source": "example",
+      "note": "",
+      "visible": true
+    }
+  ],
+  "meta": {
+    "updated_at": "example",
+    "owner": null,
+    "note": "EXAMPLE DATA \u2014 not a live meter dump"
+  }
+}
