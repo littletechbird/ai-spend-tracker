@@ -11,7 +11,7 @@ serve.log
 __pycache__/
 *.pyc
 
-# Live meter drops (Hatch / private host) — keep example only
+# Live meter drops (private desktop host) — keep example only
 static/spend-live.json
 static/spend.json
 !static/live-spend.example.json

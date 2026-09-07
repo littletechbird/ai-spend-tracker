@@ -1,8 +1,10 @@
-## Hosted publish + connectors (merge into skill)
+## Desktop product + connectors (merge into skill)
 
-**Publish default = hosted HTTPS PWA** (Cloudflare Pages / static `static/` root). One URL installs on **phone** (Add to Home Screen / Install app) and **desktop** (Chrome Install / pin). Demo mode uses `static/demo-spend.json` with a clear **Demo** chip when `/api/spend` is absent — no PowerShell required for the public install story.
+**Product = desktop local host** (`START.bat`, `serve.ps1`, `server.py`) plus a desktop dialog / side panel that polls a **local cache**. Zero billable AI tokens for refresh. See pack `docs/DESKTOP_ONLY.md` (decision 2026-09-06).
 
-**Local 127.0.0.1 / Windows host** (`START.bat`, `serve.ps1`, `server.py`) remains **optional advanced**; keep those files, do not delete. No Hatch sync cron as a dependency.
+**Not a product path:** phone PWA, Add to Home Screen, or agent/bot republish of hosted live JSON to keep a mobile glance fresh. That loop is a token sand trap.
+
+**Optional static host** (Cloudflare Pages / `static/` root) is an **example UI demo** only (`static/demo-spend.json`, **Demo** chip). Do not sell it as live phone meters.
 
 **Zero billable AI tokens for refresh:** never call Imagine, chat completions, or paid generation to update meters. Prefer free / read-only billing·usage·balance connectors, email receipts, or static demo JSON. Cloud connectors and free read-only APIs are OK; secrets stay in host env / OS secret store — never in the public pack.
 

@@ -22,7 +22,7 @@ function Maybe-RefreshGrokUsage {
 }
 
 $listener = New-Object System.Net.HttpListener
-# Prefer localhost always. Add LAN IPs when Windows URL ACL allows (needed for phone PWA).
+# Prefer localhost always. LAN bind is optional leftover; desktop product uses 127.0.0.1.
 $listener.Prefixes.Add("http://127.0.0.1:$Port/")
 $lanIps = @()
 try {
@@ -44,7 +44,7 @@ try {
   Write-Host "LAN bind unavailable (needs one-time admin URL ACL). Localhost only."
 }
 Write-Host ("AI Spend Tracker on http://127.0.0.1:{0}/" -f $Port)
-foreach ($ip in $lanIps) { Write-Host ("  phone/LAN: http://{0}:{1}/" -f $ip, $Port) }
+foreach ($ip in $lanIps) { Write-Host ("  LAN (unused by desktop product): http://{0}:{1}/" -f $ip, $Port) }
 Write-Host "Zero billable refreshes. Host runs hidden via START.bat / start_hidden.vbs."
 
 function Get-Mime([string]$path) {

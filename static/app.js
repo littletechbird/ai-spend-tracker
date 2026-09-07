@@ -405,7 +405,7 @@
 
     const t0 = performance.now();
     const DEMO_URLS = ["/demo-spend.json", "/cache/spend.example.json"];
-    // Live static drop-ins (Hatch / private host overwrite) — tried before demo.
+    // Optional local/static live JSON drop-ins — tried before demo. Not a phone republish path.
     const LIVE_STATIC_URLS = ["/spend-live.json", "/spend.json"];
 
     async function loadJson(url) {
