@@ -10,6 +10,8 @@ Creator mark: [littletechbird](https://github.com/littletechbird)
 
 Deploy once (see [`docs/deploy.md`](docs/deploy.md)), then open your HTTPS URL.
 
+**Live public demo:** [https://ai-spend-tracker.pages.dev/](https://ai-spend-tracker.pages.dev/) — see also [`docs/mobile-first.md`](docs/mobile-first.md).
+
 ### Mobile
 
 1. Open the HTTPS URL in **Safari** (iOS) or **Chrome** (Android).
