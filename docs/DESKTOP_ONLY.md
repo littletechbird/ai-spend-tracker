@@ -25,3 +25,15 @@ Desktop does not have this tax. The side panel / local host polls a local cache 
 | Optional static hosted **demo** of the UI | Hosted HTTPS as the way to keep a phone “live” |
 
 Older notes that treated mobile-first hosting as the lock (one URL, phone PWA, agent overwrite of live JSON) are **superseded** by this decision. See the stub in [`mobile-first.md`](mobile-first.md).
+
+## Default collector cadence (desktop cache)
+
+Local collectors write the cache; the UI only re-reads it. **UI poll stays ~60s** (`ui_poll_s` / `POLL_MS`). That is not a token cost.
+
+| Source | `every_min` | Why |
+| --- | ---: | --- |
+| Free / non-management meters (`higgsfield`, `x-api-credits`, `grok-cursor`) | **5** | Cheap read-only tools; keep the desk cache useful |
+| Management API (`xai-console`) | **60** | Heavier / scrape-adjacent; never billable gen |
+| Email (`gmail_rows`) | **360** | Invoice mail rarely changes |
+
+`serve.ps1` (`GrokRefreshEveryMin`) and the Grok collector (`MinIntervalMin`) match the 5-minute free-meter default. See `refresh_policy.json`.

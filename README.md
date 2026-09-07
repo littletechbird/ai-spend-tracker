@@ -56,7 +56,7 @@ Connect accounts later via free connectors / read-only keys when you are ready. 
 ## Hard constraints
 
 1. **Zero billable refresh.** Never call paid generation APIs to update the tracker. Free/read-only balance/usage/billing endpoints, email receipts, or static demo JSON only.
-2. **Low CPU.** UI polls tiny JSON ~every 60s; pauses when the tab is hidden.
+2. **Low CPU.** UI polls tiny JSON ~every 60s; pauses when the tab is hidden. Collector cadence (desktop cache, not the UI poll): free meters every **5** min; management API (`xai-console`) **60**; email **360**. See [`docs/DESKTOP_ONLY.md`](docs/DESKTOP_ONLY.md) and `refresh_policy.json`.
 3. **Desktop-only.** Local cache on a machine that is on when you are at the desk. No token-taxed republish loop to keep a phone “fresh.”
 
 ## Layout

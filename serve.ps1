@@ -9,7 +9,7 @@ $Static = Join-Path $Root 'static'
 # Optional: background refresh Grok Bot usage via free DashboardService RPCs (throttled)
 $GrokRefreshScript = Join-Path $Root 'grok_usage_refresh.ps1'
 $GrokCollectorScript = Join-Path $Root 'collectors\grok_bot_dashboard_rpc.ps1'
-$GrokRefreshEveryMin = 30
+$GrokRefreshEveryMin = 5
 $script:LastGrokRefresh = [datetime]::MinValue
 function Maybe-RefreshGrokUsage {
   if (-not (Test-Path -LiteralPath $GrokRefreshScript)) { return }

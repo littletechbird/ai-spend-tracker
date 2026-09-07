@@ -3,12 +3,12 @@
     "accounts":  {
                      "higgsfield":  {
                                         "mode":  "periodic",
-                                        "every_min":  15,
+                                        "every_min":  5,
                                         "reason":  "free balance tool; light"
                                     },
                      "x-api-credits":  {
                                            "mode":  "periodic",
-                                           "every_min":  15,
+                                           "every_min":  5,
                                            "reason":  "free get_usage_credits; light"
                                        },
                      "xai-console":  {
@@ -23,7 +23,7 @@
                                     },
                      "grok-cursor":  {
                                          "mode":  "periodic",
-                                         "every_min":  30,
+                                         "every_min":  5,
                                          "reason":  "DashboardService GetSandUsageStatus+GetCurrentPeriodUsage via local sand-secrets decrypt; free; never inference"
                                      }
                  },
