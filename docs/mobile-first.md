@@ -94,6 +94,14 @@ GitHub Pages also fine: publish `static/` only; demo fallback works without `/ap
 4. Deploy → open `https://ai-spend-tracker.pages.dev` (or the assigned URL).  
 5. For private meters: keep a second private/unlisted Pages project and drop `spend-live.json` via Hatch.
 
+## Deploy result (2026-09-06 PT)
+
+- **Cloudflare Pages:** succeeded (project `ai-spend-tracker`, LittleTechBird account).
+- **Production HTTPS URL:** https://ai-spend-tracker.pages.dev/
+- Verified: `/` → 200, `/demo-spend.json` → 200 (4 demo rows), `/live-spend.example.json` → 200.
+- **Wrangler notes:** system Node was v20; use Node ≥22 (`$HOME/.local/node22/bin` on Hatch). Create a local `node_modules/.cache` in the project so wrangler does not try `/node_modules/.cache` (root-owned).
+- **GitHub:** create/push `littletechbird/ai-spend-tracker` from this pack (no prior spend-tracker repo). Optional mirror of the public demo; CF Pages direct upload already live.
+
 ## Hard no
 
 - No chat completions / Imagine / paid generation to refresh meters.  
