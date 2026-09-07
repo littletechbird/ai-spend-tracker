@@ -1,5 +1,5 @@
 {
-  "updated_at_pt": "Live example \u00b7 replace via Hatch routine",
+  "updated_at_pt": "Live example \u00b7 local cache shape only",
   "rows": [
     {
       "id": "vendor-console",
@@ -56,9 +56,9 @@
   ],
   "meta": {
     "updated_at": "live-example",
-    "updated_at_pt": "Live example \u00b7 replace via Hatch routine",
+    "updated_at_pt": "Live example \u00b7 local cache shape only",
     "owner": null,
     "mode": "live-static",
-    "note": "EXAMPLE of spend-live.json shape. Hatch overwrites spend-live.json on the host. Never commit real meters to the public pack."
+    "note": "EXAMPLE of spend-live.json shape for a desktop local cache. Never commit real meters to the public pack. Not a hosted phone-meter drop."
   }
 }

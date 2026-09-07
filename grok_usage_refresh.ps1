@@ -1,5 +1,5 @@
 ﻿# Optional refresh hook for Grok Bot DashboardService usage (free, read-only).
-# Called from START.bat; throttled inside collector to >= 15 minutes unless -Force.
+# Called from START.bat; throttled inside collector to >= 5 minutes unless -Force.
 $ErrorActionPreference = 'Stop'
 $Root = Split-Path -Parent $MyInvocation.MyCommand.Path
 $Collector = Join-Path $Root 'collectors\grok_bot_dashboard_rpc.ps1'

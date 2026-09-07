@@ -8,7 +8,7 @@ $Root = Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path)
 $CacheDir = Join-Path $Root 'cache'
 $LivePath = Join-Path $CacheDir 'grok_bot_usage_live.json'
 $SpendPath = Join-Path $CacheDir 'spend.json'
-$MinIntervalMin = 15
+$MinIntervalMin = 5
 $Force = $false
 if ($args -contains '-Force') { $Force = $true }
 

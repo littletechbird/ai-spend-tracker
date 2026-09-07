@@ -1,7 +1,7 @@
 {
   "name": "AI Spend Tracker",
   "short_name": "Spend",
-  "description": "Hosted AI spend tracker (PWA). Demo or free connectors. Zero billable refreshes.",
+  "description": "Desktop AI spend tracker. Demo or free connectors. Zero billable refreshes.",
   "start_url": "/?source=pwa",
   "scope": "/",
   "display": "standalone",
