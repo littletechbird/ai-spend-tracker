@@ -16,7 +16,7 @@ Before GitHub push, Cloudflare deploy, or an X post:
 - [ ] No live spend numbers (use `static/demo-spend.json` / example cache only)
 - [ ] No invoice IDs / receipt subjects / team IDs / API key names
 - [ ] No `sand-secrets`, OAuth tokens, management keys, `.env`
-- [ ] No absolute personal user paths / Spinkatron paths in docs
+- [ ] No absolute personal user paths / local desk paths in docs
 - [ ] UI title/footer are product-only (“AI Spend Tracker”); littletechbird mark OK as creator link
 - [ ] Screenshots use privacy mask **or** example data
 - [ ] Live install folder is **not** what you push — this public pack is

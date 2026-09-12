@@ -60,7 +60,7 @@ python3 server.py
 - Health: `/api/health`
 - Spend JSON: `/api/spend`
 
-Local Spinkatron / localhost mode is **optional advanced** — not required for the public hosted PWA.
+Local desk / localhost mode is **optional advanced** — not required for the public hosted PWA.
 
 ## Layout
 
