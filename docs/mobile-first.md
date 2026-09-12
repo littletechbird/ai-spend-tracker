@@ -1,4 +1,4 @@
-# Mobile-first hosting (phone works with Spinkatron OFF)
+# Mobile-first hosting (phone works with local desk OFF)
 
 **Lock:** Phone PWA must use public HTTPS only — **zero** dependency on `127.0.0.1`, LAN, or a desktop that is often powered off.
 
@@ -40,8 +40,8 @@ Service worker never caches `/api/*`, `/spend-live.json`, or `/spend.json` (shel
 
 - Routine on Hatch (always-on box) builds scrubbed `spend-live.json` (same shape as demo).
 - Publishes to: Cloudflare Pages (redeploy / direct upload), R2 public object, or a private/unlisted host path.
-- Phone only fetches HTTPS JSON — **no Spinkatron**.
-- **Best for v1 private-for-Brent** (unlisted `*.pages.dev` URL + scrubbed file).
+- Phone only fetches HTTPS JSON — **no local desk**.
+- **Best for v1 private-for-owner** (unlisted `*.pages.dev` URL + scrubbed file).
 
 ### Option C — Phone PWA connectors
 
@@ -52,11 +52,11 @@ Service worker never caches `/api/*`, `/spend-live.json`, or `/spend.json` (shel
 
 | Audience | Choice | Why |
 | --- | --- | --- |
-| **v1 private-for-Brent** (unlisted URL OK) | **Option B** | Fastest path with zero desktop dependency; Hatch already authenticated for CF/gh; no secrets in PWA. |
+| **v1 private-for-owner** (unlisted URL OK) | **Option B** | Fastest path with zero desktop dependency; Hatch already authenticated for CF/gh; no secrets in PWA. |
 | **Public demo** | Pure static Pages (demo JSON only) | Scrubbed example meters; installable PWA; no live numbers. |
 | **Later connected** | Add **Option A** `/api/spend` | Free connector reads server-side; keep Option B as fallback snapshot. |
 
-Do **not** rely on Spinkatron `server.py` / `127.0.0.1:8787` for phone.
+Do **not** rely on local desk `server.py` / `127.0.0.1:8787` for phone.
 
 ## Hatch routine: overwrite live JSON
 
@@ -106,4 +106,4 @@ GitHub Pages also fine: publish `static/` only; demo fallback works without `/ap
 
 - No chat completions / Imagine / paid generation to refresh meters.  
 - No secrets in public repo or client JS.  
-- No phone dependency on Spinkatron power state.
+- No phone dependency on local desk power state.
